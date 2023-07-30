@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/queries.css">
+
+    <script src="https://kit.fontawesome.com/c3109a739f.js" crossorigin="anonymous"></script>
+
+    <title>Quinten Deconinck</title>
+</head>
+
+<body>
+    <header class="section nav-bar">
+        <ul id="nav-links">
+            <li class="menu-item about-nav"><a href="#about">About</a></li>
+            <li class="menu-item skills-nav"><a href="#skills">Skills</a></li>
+            <li class="menu-item projects-nav"><a href="#projects">Projects </a></li>
+            <li class="menu-item contact-nav"><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="section intro">
+        <figure class="name-intro">
+            <h2 class="hello">Hello, I'm</h2>
+            <h1 class="fname"><mark>Quinten</mark></h1>
+            <h1 class="lname"><mark> Deconinck </mark></h1>
+            <p class="text-intro secondary-text">A web developer from Belgium.</p>
+
+            <div class="container-socials">
+                <a href="#contact" class="contact-link">contact me &#8594</a>
+
+                <ul class="social-buttons">
+                    <li><a href="https://twitter.com/devconinck" class="social-btn twitter" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://github.com/devconinck" class="social-btn github" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/quinten-deconinck-01b375177/" class="social-btn linkedin"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </figure>
+
+        <figure><img class="my-img" src="content/logo.png" alt="Headshot of Quinten Deconinck"></figure>
+
+    </section>
+
+    <section class="sub-section about" id="about">
+        <article class="about-container">
+            <h3 class="section-title">About me</h3>
+            <div class="about-information">
+                <p class="secondary-text">
+                    My name is Quinten, and I am currently pursuing a bachelor's degree in Applied Information
+                    Technology.
+                    I am doing this at HOGENT, Belgiums largest University of Applied Sciences and Arts in Ghent.
+                    I chose to specialise in <mark> Mobile &amp enterprise development </mark>, while also attending
+                    some
+                    courses from
+                    AI &amp data engineering.
+                </p>
+                <br>
+                <p class="secondary-text">
+                    The Bachelor is focused on using technologies such as <mark>Java, React, Python and Javascript
+                    </mark>.
+                    This way I am able to build a foundation in multiple programming languages and fields in the ICT
+                    industry.
+                </p>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="sub-section skills" id="skills">
+        <h3 class="section-title">My skills</h3>
+        <div class="skill-icons">
+            <i class="fa-brands skills-btn fa-java"></i>
+            <i class="fa-brands skills-btn fa-react"></i>
+            <i class="fa-brands skills-btn fa-square-js"></i>
+            <i class="fa-brands skills-btn fa-css3-alt"></i>
+            <i class="fa-brands skills-btn fa-python"></i>
+            <i class="fa-brands skills-btn fa-node"></i>
+            <i class="fa-brands skills-btn fa-html5"></i>
+            <!-- <i class="fa-brands skills-btn fa-bootstrap"></i>-->
+        </div>
+    </section>
+
+
+    <section class="sub-section projects" id="projects">
+        <h3 class="section-title">My projects</h3>
+        <div class="timeline">
+
+            <div class="container">
+                <img src="/content/logo.png" alt="Splendor picture">
+                <div class="project">
+                    <h2 class="project-title">Splendor</h2>
+                    <p>A project for school in a group of four. Splendor is a turn based card game, built from scratch
+                    </p>
+                    <div class="project-skills">
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaFX</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="project">
+                    <h2 class="project-title">Portfolio</h2>
+                    <p>The first iteration of my portfolio website</p>
+                    <div class="project-skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="sub-section contact" id="contact">
+        <h3 class="section-title">Contact me</h3>
+        <form action="https://formspree.io/f/xknloogj" method="post" id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Email</button>
+        </form>
+    </section>
+    <script src="/main.js"></script>
+</body>
+
+</html>

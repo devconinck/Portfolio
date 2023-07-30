@@ -1,0 +1,21 @@
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-btn {
+    cursor: pointer;
+    color: var(--primary-text);
+    font-size: 10rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-4ms);
+    transform: translateY(0);
+}
+
+.skills-btn:hover {
+    color: var(--primary-accent);
+    transform: translateY(-10%);
+}

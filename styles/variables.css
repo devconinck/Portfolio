@@ -1,0 +1,20 @@
+:root {
+    /*Background colors */
+    --primary-bg: black;
+    --secondary-bg: #1a1919;
+    --tertiary-bg: #4b4a4a;
+
+    /*Text colors */
+    --primary-text: white;
+    --secondary-text: #ebe7e7;
+    --footer-text: #b3b9d4;
+
+    /*Accent colors */
+    --primary-accent: #41b2c1;
+    --secondary-accent: #066c7a;
+
+    /*Transitions */
+    --transition-4ms: all 0.4s ease;
+    --transition-5ms: all 0.5s ease;
+
+}
