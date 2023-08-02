@@ -103,11 +103,17 @@
         <div class="timeline">
 
             <div class="container">
-                <img src="/content/logo.png" alt="Splendor picture">
+                <h2 class="project-title">Splendor</h2>
+                <div class="project-image">
+                    <img onclick="enlargeImg()" src="/content/Splendor.PNG" id="splendor" alt="Splendor picture">
+                    <i class="fa-solid icon-enlarge fa-magnifying-glass-plus"></i>
+                </div>
+
                 <div class="project">
-                    <h2 class="project-title">Splendor</h2>
+
                     <p>A project for school in a group of four. Splendor is a turn based card game, built from scratch
                     </p>
+
                     <div class="project-skills">
                         <ul>
                             <li>Java</li>
@@ -118,9 +124,10 @@
             </div>
 
             <div class="container">
+                <h2 class="project-title">Portfolio</h2>
                 <div class="project">
-                    <h2 class="project-title">Portfolio</h2>
-                    <p>The first iteration of my portfolio website</p>
+
+                    <p>A very simple, first iteration of my portfolio website, you are looking at it right now</p>
                     <div class="project-skills">
                         <ul>
                             <li>HTML</li>
@@ -152,7 +159,21 @@
             <button type="submit">Send Email</button>
         </form>
     </section>
-    <script src="/main.js"></script>
+    <script>
+        img = document.getElementById("splendor")
+
+        const enlargeImg = () => {
+            if (img.style.width <= "60%") {
+                img.style.transform = "scale(2)";
+                img.style.transition = "transform 0.25s eases"
+            }
+            else {
+                img.style.transform = "scale(0.5)";
+                img.style.transition = "transform 0.25s ease"
+            }
+        }
+    </script>
 </body>
+
 
 </html>
