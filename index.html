@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/queries.css">
+    <script src="app.js" defer></script>
 
     <script src="https://kit.fontawesome.com/c3109a739f.js" crossorigin="anonymous"></script>
 
@@ -22,16 +23,15 @@
 </head>
 
 <body>
-    <header class="section nav-bar">
+    <header class="section nav-bar hidden">
         <ul id="nav-links">
             <li class="menu-item about-nav"><a href="#about">About</a></li>
             <li class="menu-item skills-nav"><a href="#skills">Skills</a></li>
             <li class="menu-item projects-nav"><a href="#projects">Projects </a></li>
-            <li class="menu-item contact-nav"><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
-    <section class="section intro">
+    <section class="section intro hidden">
         <figure class="name-intro">
             <h2 class="hello">Hello, I'm</h2>
             <h1 class="fname"><mark>Quinten</mark></h1>
@@ -58,7 +58,7 @@
 
     </section>
 
-    <section class="sub-section about" id="about">
+    <section class="sub-section about hidden" id="about">
         <article class="about-container">
             <h3 class="section-title">About me</h3>
             <div class="about-information">
@@ -83,7 +83,7 @@
 
     </section>
 
-    <section class="sub-section skills" id="skills">
+    <section class="sub-section skills hidden" id="skills">
         <h3 class="section-title">My skills</h3>
         <div class="skill-icons">
             <i class="fa-brands skills-btn fa-java"></i>
@@ -98,40 +98,41 @@
     </section>
 
 
-    <section class="sub-section projects" id="projects">
+    <section class="sub-section projects hidden" id="projects">
         <h3 class="section-title">My projects</h3>
         <div class="timeline">
 
-            <div class="container">
+            <div class="container hidden-project">
                 <h2 class="project-title">Splendor</h2>
                 <div class="project-image">
-                    <img onclick="enlargeImg()" src="/content/Splendor.PNG" id="splendor" alt="Splendor picture">
+                    <img class="image" src="/content/Splendor.PNG" id="splendor" alt="Splendor picture">
                     <i class="fa-solid icon-enlarge fa-magnifying-glass-plus"></i>
                 </div>
 
                 <div class="project">
 
-                    <p>A project for school in a group of four. Splendor is a turn based card game, built from scratch
+                    <p>This was a school project in a group of four. Splendor is a turn based card game, the objective is to be the first player to reach 15 points.
                     </p>
 
                     <div class="project-skills">
                         <ul>
-                            <li>Java</li>
-                            <li>JavaFX</li>
+                            <li><i class="fa-solid fa-code"></i>Java</li>
+                            <li><i class="fa-solid fa-code"></i>JavaFX</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container hidden-project">
                 <h2 class="project-title">Portfolio</h2>
                 <div class="project">
 
-                    <p>A very simple, first iteration of my portfolio website, you are looking at it right now</p>
+                    <p>The first iteration of my portfolio website, which is what you are looking at right now.</p>
                     <div class="project-skills">
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                            <li><i class="fa-solid fa-code"></i>HTML</li>
+                            <li><i class="fa-solid fa-code"></i>CSS</li>
+                            <li><i class="fa-solid fa-code"></i>Javascript</li>
                         </ul>
                     </div>
                 </div>
@@ -141,7 +142,7 @@
         </div>
     </section>
 
-    <section class="sub-section contact" id="contact">
+    <section class="sub-section contact hidden" id="contact">
         <h3 class="section-title">Contact me</h3>
         <form action="https://formspree.io/f/xknloogj" method="post" id="contact-form">
             <label for="name">Name:</label>
@@ -159,20 +160,7 @@
             <button type="submit">Send Email</button>
         </form>
     </section>
-    <script>
-        img = document.getElementById("splendor")
-
-        const enlargeImg = () => {
-            if (img.style.width <= "60%") {
-                img.style.transform = "scale(2)";
-                img.style.transition = "transform 0.25s eases"
-            }
-            else {
-                img.style.transform = "scale(0.5)";
-                img.style.transition = "transform 0.25s ease"
-            }
-        }
-    </script>
+  
 </body>
 
 

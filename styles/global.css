@@ -26,11 +26,13 @@ a {
 
 .section {
     padding: 3rem 15rem;
+  
 }
 
 .sub-section {
     margin-top: 5rem;
     padding: 3rem 20rem;
+    min-height: 60vh;
 }
 
 .section-title {
@@ -93,3 +95,34 @@ mark {
 #nav-links a:hover {
     color: var(--primary-accent);
 }
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-20%);
+    transition: all 1s;
+    
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+
+    }
+}
+
+
+.nav-bar.show{
+    transition-delay: 180ms;
+}
+.intro.show{
+    transition-delay: 30ms;
+}
+

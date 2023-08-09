@@ -2,7 +2,6 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .container {
@@ -13,18 +12,17 @@
     border-radius: 4px;
     margin-bottom: 2rem;
     left: 15%;
-    animation: movedown 0.5s linear forwards;
-    opacity: 0;
+
 }
 
 .container::before {
     content: "";
     position: absolute;
-    width: 15%;
+    width: 20%;
     height: 3px;
     top: 50%;
-    left: -12rem;
-    z-index: 1;
+    left: -17%;
+    z-index: -1;
     background-color: var(--primary-accent);
 }
 
@@ -77,16 +75,19 @@
 }
 
 .project-title:hover::after {
-    width: 30%;
+    width: calc(100% / 2.5);
 }
 
 .project {
-    padding: 1rem 3rem;
+    padding-top: 2rem;
     position: relative;
     border-radius: 7px;
     font-size: 1.5rem;
+    z-index: -1;
 
 }
+
+
 
 .project-skills {
     margin-top: 1rem;
@@ -101,12 +102,39 @@
     top: 0;
     left: 1%;
     margin-right: 5rem;
-    z-index: 1;
+    z-index: -1;
     background-color: var(--primary-accent);
-    animation: moveline 3s linear forwards;
+
+}
+
+.enlarged{
+    transform: scale(2.5);
+    z-index: 3;
+    opacity: 1;
 }
 
 
+.hidden-project{
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: all 2s;
+}
+
+.show-project{
+    opacity: 1;
+    transform: translateX(0);
+   
+}
+
+.show-tl{
+    animation: moveline 5s linear forwards;
+    animation-delay: 1s;
+}
+
+.fa-code{
+    margin-right: 1rem;
+    color: var(--primary-accent);
+}
 
 @keyframes moveline {
     0% {
@@ -120,5 +148,12 @@
 
 
 .icon-enlarge {
-    font-size: 10rem;
+    font-size: 3rem;
+    position: absolute;
+    opacity: 60%;
+    top: 43%;
+    left: 30%;
+    z-index: 0;
+    pointer-events: none;
+    
 }
