@@ -6,7 +6,7 @@ const observer = new IntersectionObserver((el) => {
             entry.target.classList.remove("show")
         }
     })
-}, {threshold: 0.5})
+}, {threshold: 0.35})
 
 
 const hiddenElements = document.querySelectorAll(".hidden")
@@ -28,25 +28,9 @@ const observer_project = new IntersectionObserver((el) => {
             entry.target.classList.remove("show-project")
         }
     })
-}, {threshold: 0.5})
+}, {threshold: 0.7})
 
 
 const hiddenProjects = document.querySelectorAll(".hidden-project")
 hiddenProjects.forEach((el) => observer_project.observe(el))
-
-
-
-
-const observer_timeline = new IntersectionObserver((el) => {
-    el.forEach((entry) => {
-        if (entry.isIntersecting){
-            entry.target.classList.add("show-tl")
-        } else{
-            entry.target.classList.remove("show-tl")
-        }
-    })
-}, {threshold: 0.5})
-
-const hiddenTimeline = document.querySelectorAll(".timeline")
-hiddenTimeline.forEach((el) => observer_timeline.observe(el))
 
