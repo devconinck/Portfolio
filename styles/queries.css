@@ -1,63 +1,58 @@
 @media screen and (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
 
-    html {
-        font-size: 55%;
-    }
+  .section {
+    padding: 3rem 10rem;
+  }
 
-    .section {
-        padding: 3rem 10rem;
-    }
-
-    /*
+  /*
     .nav {
         padding: 3rem 10rem
     }
 */
-    .my-img {
-        width: 40rem;
-    }
-
-
+  .my-img {
+    width: 40rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
 
-    html {
-        font-size: 50%;
-    }
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
 
-    .intro {
-        flex-direction: column;
-        justify-content: center;
-        gap: 5rem;
-    }
+  .section {
+    padding: 3rem 5rem;
+  }
 
-    .section {
-        padding: 3rem 5rem;
-    }
-
-    .my-img {
-        width: 30rem;
-    }
-
+  .my-img {
+    width: 30rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    html {
-        font-size: 45%;
-    }
+  html {
+    font-size: 45%;
+  }
 
-    .section {
-        padding: 2rem;
-    }
+  .section {
+    padding: 2rem;
+  }
 
-    .sub-section {
-        padding: 5rem;
-    }
+  .sub-section {
+    padding: 5rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .sub-section {
-        padding: 3rem;
-    }
+  .sub-section {
+    padding: 3rem;
+  }
 }
